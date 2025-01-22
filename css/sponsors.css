@@ -1,0 +1,149 @@
+.our-sponsors-section {
+  /* background: wheat; */
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.our-sponsors-section .our-sponsors-heading-container .our-sponsors-title {
+  font-size: 35px;
+  position: relative;
+}
+
+.our-sponsors-section
+  .our-sponsors-heading-container
+  .our-sponsors-title::before {
+  content: "";
+  position: absolute;
+  background-image: url(/Assets/underline-yellow.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: contain;
+  top: 29px;
+  left: 22px;
+  right: 37px;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  z-index: -1;
+}
+
+.our-sponsors-section .our-sponsors-logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.our-sponsors-section .logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.our-sponsors-section .logo-container .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.our-sponsors-section .logo-container .microsoft-text {
+  font-size: 40px;
+  color: gray;
+  font-weight: 600;
+}
+
+.our-sponsors-section .logo-container .slack-text {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.our-sponsors-section .google-container {
+  font-size: 40px;
+  font-weight: 700;
+  word-spacing: -5px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-sponsors-section {
+    display: flex;
+    gap: 65px;
+  }
+
+  .our-sponsors-section .our-sponsors-logo-area {
+    display: flex;
+    gap: 65px;
+  }
+
+  .our-sponsors-section .logo-container {
+    display: flex;
+    gap: 65px;
+  }
+
+  .our-sponsors-section .our-sponsors-heading-container .our-sponsors-title {
+    font-size: 50px;
+  }
+
+  .our-sponsors-section
+    .our-sponsors-heading-container
+    .our-sponsors-title::before {
+    top: 42px;
+    left: 36px;
+  }
+
+  .our-sponsors-section .logo-container .microsoft-text {
+    font-size: 50px;
+  }
+
+  .our-sponsors-section .logo-container .slack-text {
+    font-size: 65px;
+  }
+
+  .our-sponsors-section .google-container {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .our-sponsors-section .our-sponsors-logo-area {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .our-sponsors-section .logo-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .our-sponsors-section .google-container {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .our-sponsors-section .our-sponsors-heading-container .our-sponsors-title {
+    font-size: 70px;
+  }
+
+  .our-sponsors-section
+    .our-sponsors-heading-container
+    .our-sponsors-title::before {
+    top: 63px;
+    left: 45px;
+    width: 100%;
+    height: 100%;
+  }
+  .our-sponsors-section .our-sponsors-logo-area {
+    display: flex;
+    gap: 190px;
+  }
+
+  .our-sponsors-section .logo-container {
+    display: flex;
+    gap: 190px;
+  }
+}

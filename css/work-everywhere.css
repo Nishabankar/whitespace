@@ -1,0 +1,202 @@
+.work-everywhere-section {
+  background: #043873;
+  margin: 0 -20px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.work-everywhere-section::before {
+  content: "";
+  position: absolute;
+  background-image: url(/Assets/bg-circular.svg);
+  background-repeat: no-repeat;
+  background-size: 82% 100%;
+  height: 82vw;
+  left: -211px;
+  top: -47px;
+  transform: rotate(-20deg);
+  aspect-ratio: 16/9;
+  opacity: 0.5;
+  display: none;
+}
+
+.work-everywhere-section .work-everywhere-heading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.work-everywhere-section
+  .work-everywhere-heading-container
+  .work-everywhere-title {
+  font-size: 40px;
+  padding-left: 20px;
+  color: #ffff;
+  font-weight: bolder;
+  margin-top: 90px;
+  position: relative;
+  z-index: 0;
+}
+
+.work-everywhere-section
+  .work-everywhere-heading-container
+  .work-everywhere-title::before {
+  content: "";
+  position: absolute;
+  background-image: url(/Assets/underline-blue.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: contain;
+  top: 83px;
+  left: 19px;
+  right: 37px;
+  bottom: 0;
+  width: 85%;
+  height: 35px;
+  z-index: -1;
+}
+
+.work-everywhere-section
+  .work-everywhere-heading-container
+  .work-everywhere-decp {
+  font-size: 22px;
+  color: #ffff;
+  padding-left: 20px;
+}
+
+.work-everywhere-section .work-everywhere-heading-container .arrow-img {
+  height: 30px;
+}
+
+.work-everywhere-section .work-everywhere-heading-container .try-taskey-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4f9cf9;
+  padding: 20px;
+  width: 230px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #ffff;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 90px;
+}
+
+@media screen and (min-width: 768px) {
+  .work-everywhere-section {
+    margin-top: 100px;
+  }
+  .work-everywhere-section::before {
+    height: 60vw;
+    left: -505px;
+    top: -110px;
+    transform: rotate(250deg);
+    display: block;
+  }
+  .work-everywhere-section
+    .work-everywhere-heading-container
+    .work-everywhere-title {
+    font-size: 55px;
+    width: 86%;
+  }
+
+  .work-everywhere-section
+    .work-everywhere-heading-container
+    .work-everywhere-title::before {
+    top: 100px;
+    left: 7px;
+    width: 40%;
+  }
+
+  .work-everywhere-section
+    .work-everywhere-heading-container
+    .work-everywhere-decp {
+    font-size: 20px;
+    width: 81%;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .work-everywhere-section {
+    margin: 0 -40px;
+    margin-top: 100px;
+  }
+
+  .work-everywhere-section::before {
+    display: none;
+  }
+
+  .work-everywhere-section
+    .work-everywhere-heading-container
+    .work-everywhere-title {
+    font-size: 67px;
+    width: 56%;
+    margin-left: 20px;
+    line-height: 67px;
+  }
+
+  .work-everywhere-section
+    .work-everywhere-heading-container
+    .work-everywhere-title::before {
+    top: 113px;
+    left: 355px;
+    width: 46%;
+  }
+
+  .work-everywhere-section
+    .work-everywhere-heading-container
+    .work-everywhere-decp {
+    font-size: 18px;
+    width: 58%;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .work-everywhere-section .work-everywhere-heading-container .try-taskey-btn {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .work-everywhere-section {
+    margin-top: 130px;
+  }
+  .work-everywhere-section::before {
+    height: 29vw;
+    left: -452px;
+    top: -132px;
+    transform: rotate(258deg);
+    display: block;
+  }
+
+  .work-everywhere-section .work-everywhere-heading-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .work-everywhere-section
+    .work-everywhere-heading-container
+    .work-everywhere-title {
+    font-size: 82px;
+    width: 80%;
+  }
+
+  .work-everywhere-section
+    .work-everywhere-heading-container
+    .work-everywhere-title::before {
+    top: 51px;
+    left: 840px;
+    width: 29%;
+  }
+
+  .work-everywhere-section
+    .work-everywhere-heading-container
+    .work-everywhere-decp {
+    font-size: 22px;
+    text-align: center;
+    line-height: 35px;
+    width: 83%;
+  }
+}

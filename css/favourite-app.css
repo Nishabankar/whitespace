@@ -1,0 +1,129 @@
+.favourite-app-section {
+  background: #043873;
+  margin: 0 -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+.favourite-app-section .app-image-container .app-image {
+  height: 190px;
+  margin-top: 90px;
+}
+.favourite-app-section .app-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.favourite-app-section .app-heading-container .app-title {
+  font-size: 39px;
+  text-align: center;
+  font-weight: 600;
+  color: #ffff;
+}
+
+.favourite-app-section .app-heading-container .app-decp {
+  font-size: 22px;
+  text-align: center;
+  color: #ffff;
+}
+
+.favourite-app-section .app-heading-container .read-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4f9cf9;
+  padding: 20px;
+  width: 230px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #ffff;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.favourite-app-section .app-heading-container .read-more-btn .arrow-image {
+  height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .favourite-app-section {
+    display: flex;
+    gap: 60px;
+  }
+  .favourite-app-section .app-image-container .app-image {
+    height: 300px;
+  }
+
+  .favourite-app-section .app-heading-container .app-title {
+    font-size: 60px;
+  }
+
+  .favourite-app-section .app-heading-container .app-decp {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .favourite-app-section {
+    display: flex;
+    flex-direction: row;
+    gap: unset;
+    margin: 0 -40px;
+    margin-top: 100px;
+  }
+  .favourite-app-section .app-image-container {
+    width: 57%;
+    margin-left: 15px;
+  }
+  .favourite-app-section .app-image-container .app-image {
+    height: 380px;
+  }
+
+  .favourite-app-section .app-heading-container {
+    width: 43%;
+    align-items: unset;
+  }
+
+  .favourite-app-section .app-heading-container .app-title {
+    font-size: 60px;
+    text-align: unset;
+    margin-top: 160px;
+  }
+
+  .favourite-app-section .app-heading-container .app-decp {
+    font-size: 20px;
+    text-align: unset;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .favourite-app-section {
+    margin-top: 150px;
+  }
+
+  .favourite-app-section .app-image-container {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+  .favourite-app-section .app-image-container .app-image {
+    height: 485px;
+  }
+
+  .favourite-app-section .app-heading-container {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+
+  .favourite-app-section .app-heading-container .app-title {
+    font-size: 75px;
+  }
+
+  .favourite-app-section .app-heading-container .app-decp {
+    font-size: 21px;
+  }
+}

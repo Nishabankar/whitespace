@@ -1,0 +1,117 @@
+.banner-section {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.banner-section .banner-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.banner-section .banner-heading-container .banner-head {
+  color: #4f9cf9;
+  font-size: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.banner-section .banner-heading-container .banner-desp {
+  color: #4f9cf9;
+  font-size: 21px;
+  text-align: center;
+}
+
+.banner-section .banner-heading-container .banner-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4f9cf9;
+  padding: 20px;
+  width: 230px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #ffff;
+  margin-top: 20px;
+}
+
+.banner-section .banner-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-section .banner-heading-container .arrow-img {
+  height: 30px;
+}
+
+.banner-section .banner-img-container .banner-image {
+  width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-section {
+    margin-top: 160px;
+  }
+  .banner-section .banner-heading-container .banner-head {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .banner-section .banner-heading-container .banner-desp {
+    font-size: 20px;
+  }
+
+  .banner-section .banner-img-container .banner-image {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .banner-section .banner-heading-container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .banner-section .banner-heading-container .banner-head {
+    font-size: 57px;
+    text-align: unset;
+  }
+
+  .banner-section .banner-heading-container .banner-desp {
+    text-align: unset;
+  }
+
+  .banner-section .banner-img-container .banner-image {
+    width: 438px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .banner-section .banner-heading-container .banner-head {
+    font-size: 65px;
+  }
+
+  .banner-section .banner-heading-container .banner-desp {
+    font-size: 29px;
+  }
+
+  .banner-section .banner-img-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+  }
+
+  .banner-section .banner-img-container .banner-image {
+    width: 650px;
+    height: 400px;
+  }
+}

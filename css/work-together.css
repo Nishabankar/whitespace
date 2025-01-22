@@ -1,0 +1,398 @@
+.work-together-section {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.work-together-section .work-together-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.work-together-section .work-together-container .work-together-title {
+  font-size: 35px;
+  font-weight: 600;
+  position: relative;
+}
+
+.work-together-title::before {
+  content: "";
+  position: absolute;
+  background-image: url(/Assets/underline-yellow.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: contain;
+  top: 22px;
+  left: 50px;
+  right: 70px;
+  bottom: 0;
+  width: 80%;
+  height: 52px;
+  z-index: -1;
+}
+
+.work-together-section .work-together-container .work-together-desp {
+  font-size: 23px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.work-together-section .work-together-container .try-it-now-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4f9cf9;
+  padding: 20px;
+  width: 230px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #ffff;
+  margin-top: 20px;
+}
+
+.work-together-section .work-together-container .try-it-now-btn img {
+  height: 30px;
+}
+
+.work-together-section .work-together-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle {
+  border: 3px dashed blue;
+  border-radius: 50%;
+  padding: 55px;
+  position: relative;
+  animation: move 35s infinite linear;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .dot,
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .work-together-second-circle
+  .dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .red {
+  background-color: red;
+  top: 0;
+  left: 45px;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .yellow {
+  background-color: yellow;
+  top: 0;
+  right: 45px;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .blue {
+  background-color: blue;
+  left: -16px;
+  top: 100px;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .green {
+  background-color: green;
+  bottom: 0;
+  right: 45px;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .blue-second {
+  background-color: blue;
+  right: -16px;
+  top: 100px;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .work-together-second-circle {
+  border: 3px dashed blue;
+  border-radius: 50%;
+  padding: 55px;
+  position: relative;
+  animation: move 25s infinite linear;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .work-together-second-circle
+  .green {
+  background-color: green;
+  top: -16px;
+  left: 45%;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .work-together-second-circle
+  .blue {
+  background-color: blue;
+  left: -16px;
+  top: 45%;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .work-together-second-circle
+  .gold {
+  background-color: gold;
+  bottom: -16px;
+  left: 45%;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .work-together-second-circle
+  .blue-second {
+  background-color: blue;
+  right: -16px;
+  top: 45%;
+}
+
+.work-together-section
+  .work-together-img-container
+  .work-together-first-circle
+  .work-together-second-circle
+  img {
+  height: 30px;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-together-section .work-together-container .work-together-title {
+    font-size: 55px;
+  }
+
+  .work-together-title::before {
+    top: 47px;
+    left: 76px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle {
+    padding: 80px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .work-together-second-circle {
+    padding: 80px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .red {
+    top: 25px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .yellow {
+    top: 25px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .blue {
+    left: -4px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .green {
+    bottom: 25px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .blue-second {
+    right: -4px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .work-together-second-circle
+    img {
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .work-together-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .work-together-section .work-together-container {
+    align-items: unset;
+  }
+
+  .work-together-title::before {
+    top: 33px;
+    left: 76px;
+    width: 55%;
+  }
+
+  .work-together-section .work-together-container .work-together-desp {
+    text-align: unset;
+    font-size: 22px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .dot,
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .work-together-second-circle
+    .dot {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .work-together-section .work-together-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: unset;
+  }
+
+  .work-together-section .work-together-container .work-together-title {
+    font-size: 80px;
+  }
+
+  .work-together-title::before {
+    top: 71px;
+    left: 115px;
+    width: 70%;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle {
+    border: 4px dashed blue;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .work-together-second-circle {
+    border: 4px dashed blue;
+  }
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .dot,
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .work-together-second-circle
+    .dot {
+    width: 40px;
+    height: 40px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle {
+    padding: 120px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .work-together-second-circle {
+    padding: 120px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .red {
+    top: -20px;
+    left: 50%;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .yellow {
+    top: 10px;
+    right: auto;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .blue {
+    left: 25px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .green {
+    bottom: 80px;
+  }
+
+  .work-together-section
+    .work-together-img-container
+    .work-together-first-circle
+    .blue-second {
+    right: 25px;
+  }
+}
